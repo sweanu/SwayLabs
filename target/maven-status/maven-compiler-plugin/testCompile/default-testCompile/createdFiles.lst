@@ -1,3 +1,4 @@
-pageLogin\LoginPage_Swag.class
 testcases\Test_Swag.class
+pageLogin\LoginPage_Swag.class
+testcases\Dummy.class
 testcases\BaseClass_Swag.class

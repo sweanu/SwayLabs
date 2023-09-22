@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\Sweta\eclipse-workspace\SwagLabsMaven\testng.xml</span>
+                    <span>C:\Users\Sweta\eclipse-workspace\SwagLabsMaven\sanity.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +102,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.Test_Swag" class="method navigator-link" hash-for-method="NegativeTest">NegativeTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.Test_Swag" class="method navigator-link" hash-for-method="PositiveTest">PositiveTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testcases.Dummy" class="method navigator-link" hash-for-method="testcase">testcase</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -125,21 +120,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testcases.Test_Swag</span>
+              <span class="class-name">testcases.Dummy</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="NegativeTest">
-                  </a> <!-- NegativeTest -->
-                  <span class="method-name">NegativeTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="PositiveTest">
-                  </a> <!-- PositiveTest -->
-                  <span class="method-name">PositiveTest</span>
+                  <a name="testcase">
+                  </a> <!-- testcase -->
+                  <span class="method-name">testcase</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -147,7 +135,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Sweta\eclipse-workspace\SwagLabsMaven\testng.xml</span>
+            <span class="header-content">C:\Users\Sweta\eclipse-workspace\SwagLabsMaven\sanity.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -156,7 +144,7 @@
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testcases.Test_Swag&quot;/&gt;
+      &lt;class name=&quot;testcases.Dummy&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -196,20 +184,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'NegativeTest')
-data.setCell(0, 2, 'testcases.Test_Swag')
-data.setCell(0, 3, 679);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'PositiveTest')
-data.setCell(1, 2, 'testcases.Test_Swag')
-data.setCell(1, 3, 490);
+data.setCell(0, 1, 'testcase')
+data.setCell(0, 2, 'testcases.Dummy')
+data.setCell(0, 3, 12);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 12 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -235,39 +219,11 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testcases.Test_Swag</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">ReportSetup</span>
+              <div class="chronological-class-name">testcases.Dummy</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testcase</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void testcases.Test_Swag.NegativeTest() throws com.codoid.products.exception.FilloException)</span>
-                <span class="method-start">964 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">NegativeTest</span>
-                <span class="method-start">8864 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">Teardown</span>
-                <span class="method-start">9543 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void testcases.Test_Swag.PositiveTest())</span>
-                <span class="method-start">11053 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">PositiveTest</span>
-                <span class="method-start">16612 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">Teardown</span>
-                <span class="method-start">17106 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-test after">
-                <span class="method-name">Reportclean</span>
-                <span class="method-start">18442 ms</span>
-              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
